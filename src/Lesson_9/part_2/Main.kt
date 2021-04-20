@@ -7,8 +7,7 @@ fun main(args: Array<String>) {
 }
 
 fun getFavoriteColor (color: Color) = when (color) {
-    BLACK -> "Чёрный"
-    WHITE -> "Белый"
+    BLACK, WHITE -> "Чёрный или белый"
     RED -> "Красный"
     GREEN -> "Зелёный"
 
