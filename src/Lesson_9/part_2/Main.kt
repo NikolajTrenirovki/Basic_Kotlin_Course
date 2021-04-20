@@ -3,16 +3,14 @@ import Lesson_9.part_2.Color.*
 
 fun main(args: Array<String>) {
 
-    var color: Color = Color.BLACK
+    println(getFavoriteColor(BLACK))
+}
 
-    var result = when (color) {
-        BLACK -> "Чёрный"
-        WHITE -> "Белый"
-        RED -> "Красный"
-        GREEN -> "Зелёный"
+fun getFavoriteColor (color: Color) = when (color) {
+    BLACK -> "Чёрный"
+    WHITE -> "Белый"
+    RED -> "Красный"
+    GREEN -> "Зелёный"
 
-        else -> "Без цвета"
-    }
-
-    println(result)
+    else -> "Без цвета"
 }
